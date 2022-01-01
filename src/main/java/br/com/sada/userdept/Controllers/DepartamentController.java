@@ -16,9 +16,13 @@ public class DepartamentController {
 	@Autowired
 	DepartmentRepository departRepository;
 
+	@RequestMapping
 	public List<Department> listAll() {
 		List<Department> result = departRepository.findAll();
 		return result;
 	}
 
+	
+	
+	
 }
