@@ -16,7 +16,7 @@ public class DepartamentController {
 	@Autowired
 	DepartmentRepository departRepository;
 
-	public List<Department> listarTodos() {
+	public List<Department> listAll() {
 		List<Department> result = departRepository.findAll();
 		return result;
 	}
