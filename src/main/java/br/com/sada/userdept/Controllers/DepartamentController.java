@@ -32,7 +32,7 @@ public class DepartamentController {
 	}
 
 	@PostMapping
-	public Department inclusao(@RequestBody Department entity) {
+	public Department gravarDepto(@RequestBody Department entity) {
 		Department result = departRepository.save(entity);
 		return result;
 	}
